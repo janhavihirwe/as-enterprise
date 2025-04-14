@@ -1,6 +1,6 @@
 import React from 'react'
 import SystemMaintenance from '../servicescontent/SystemMaintenance';
-import ITConsulting from '../servicescontent/ITConsulting';
+import ItConsulting from '../servicescontent/ItConsulting';
 import Buyback from '../servicescontent/Buyback';
 import Rentals from '../servicescontent/Rentals';
 import Lenovo from '../servicescontent/Lenovo';
@@ -11,7 +11,7 @@ function Content({serviceName}) {
     const renderComponent = () => {
         switch (serviceName) {
           case 'IT Consulting':
-            return <ITConsulting/>;
+            return <ItConsulting/>;
           case 'System Maintenance':
             return <SystemMaintenance/>;
           case 'Buyback Services':

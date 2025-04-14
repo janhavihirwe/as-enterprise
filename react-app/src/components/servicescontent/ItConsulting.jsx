@@ -8,7 +8,7 @@ import star from "../../assets/star1.png"
 import electricity from "../../assets/electricity.png"
 import support from "../../assets/support.png"
 
-function ITConsulting() {
+function ItConsulting() {
   return (
     <div>
             <div style={{
@@ -82,4 +82,4 @@ function ITConsulting() {
   )
 }
 
-export default ITConsulting
+export default ItConsulting
