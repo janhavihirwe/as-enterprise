@@ -1,0 +1,32 @@
+[
+    {
+        "img":"grid1.png",
+        "heading":"IT Consulting",
+        "description":"Strategic technology planning and implementation guidance"
+    },
+    {
+        "img":"grid2.png",
+        "heading":"System Maintenance",
+        "description":"Regular maintenance and repairs for optimal performance"
+    },
+    {
+        "img":"grid3.png",
+        "heading":"Buyback Services",
+        "description":"Fair valuation and purchase of used systems"
+    },
+    {
+        "img":"grid4.png",
+        "heading":"System Rentals",
+        "description":"Flexible rental options for temporary requirements"
+    },
+    {
+        "img":"grid5.png",
+        "heading":"Lenovo Products",
+        "description":"Wide range of genuine Lenovo devices and accessories"
+    },
+    {
+        "img":"grid6.png",
+        "heading":"Warranty Plans",
+        "description":"Comprehensive coverage options for peace of mind"
+    }
+]
