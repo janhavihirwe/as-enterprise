@@ -6,14 +6,14 @@ function App() {
   
 
   return (
-    <>
+    <div className="font-roboto">
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/services" element={<AllServices/>}/>
+          <Route path="/services/:name" element={<AllServices/>}/>
         </Routes>
       </Router>
-    </>
+    </div>
   )
 }
 

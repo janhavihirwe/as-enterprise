@@ -3,11 +3,13 @@ import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import logo from "../../assets/logo.png"
 import { MdMenu } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick }) {
   const [showMenu, setShowMenu] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
   const menuRef = useRef(null);
+  const navigate=useNavigate()
 
   // Close menu if clicked outside
   useEffect(() => {
@@ -36,6 +38,7 @@ function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick 
             className={`cursor-pointer ${activeItem === "Home" ? "font-bold" : ""}`}
             onClick={() => {
               setActiveItem("Home");
+              navigate("/")
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
@@ -84,13 +87,14 @@ function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick 
 
         {/* Mobile Dropdown */}
         {showMenu && (
-          <div ref={menuRef} className="absolute top-[120px] right-5 w-[200px] bg-white shadow-lg rounded-md z-50">
+          <div ref={menuRef} className="absolute top-full right-5 w-[200px] bg-white shadow-lg rounded-md z-50">
             <div className="flex flex-col p-4 gap-3 text-black">
               <div
                 className={`cursor-pointer ${activeItem === "Home" ? "font-bold" : ""}`}
                 onClick={() => {
                   setActiveItem("Home");
                   setShowMenu(false);
+                  navigate("/")
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >

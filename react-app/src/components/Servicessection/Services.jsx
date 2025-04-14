@@ -4,9 +4,11 @@ import certification from "../../assets/certification.png"
 import rental from "../../assets/rentals.png"
 import star from "../../assets/star.png"
 import bulb from "../../assets/bulb.png"
+import { useNavigate } from 'react-router-dom'
 
 function Services() {
     const images = import.meta.glob('../../assets/*.png', { eager: true });
+    const navigate = useNavigate();
   return (
     <div>
     <div className='text-center mt-[35px]'>
@@ -23,7 +25,7 @@ function Services() {
             <img src={matchedImg} alt={item.heading} className="w-[100%] h-auto object-contain" />
             <h2 className="text-lg font-semibold mt-2 ml-1">{item.heading}</h2>
             <p className="text-sm text-gray-600 mt-1 w-[85%] ml-1">{item.description}</p>
-            <button className='bg-[#312E81] text-[16px] font-[500] leading-[24px] text-white w-[100%] h-[40px] rounded-[4px] mt-[20px] px-[24px] py-[8px] cursor-pointer'>Get Quote</button>
+            <button className='bg-[#312E81] text-[16px] font-[500] leading-[24px] text-white w-[100%] h-[40px] rounded-[4px] mt-[20px] px-[24px] py-[8px] cursor-pointer' onClick={()=>navigate(`/services/${item.heading}`)}>Get Quote</button>
           </div>
         );
       })}
