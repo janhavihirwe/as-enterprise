@@ -30,7 +30,7 @@ function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick 
       </div>
 
       <div className="flex justify-between p-4 px-8 items-center relative">
-        <img src={logo} className="cursor-pointer" />
+        <img src={logo} className="cursor-pointer" onClick={()=>navigate("/")}/>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-x-8 text-base items-center">
