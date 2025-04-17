@@ -36,22 +36,22 @@ function Services() {
         <div className='text-center'>
             <img src={certification} className='mx-auto'/>
             <div className='text-[16px] font-[600] leading-[28px]'>Lenovo Certification</div>
-            <div className='text-[14px] font-normal w-[30%] leading-[16.8px] lg:w-[60%] mx-auto'>Authorized dealer providing genuine products and expert support</div>
+            <div className='text-[14px] font-normal lg:w-[30%] leading-[16.8px] lg:w-[60%] mx-auto'>Authorized dealer providing genuine products and expert support</div>
         </div>
         <div className='text-center'>
             <img src={rental} className='mx-auto'/>
             <div className='text-[16px] font-[600] leading-[28px]'>Affordable Rentals</div>
-            <div className='text-[14px] font-normal w-[30%] leading-[16.8px] lg:w-[70%] mx-auto'>Flexible rental options to suit your business needs and budget</div>
+            <div className='text-[14px] font-normal lg:w-[30%] leading-[16.8px] lg:w-[70%] mx-auto'>Flexible rental options to suit your business needs and budget</div>
         </div>
         <div className='text-center'>
             <img src={star} className='mx-auto'/>
             <div className='text-[16px] font-[600] leading-[28px]'>8+ Years Excellence</div>
-            <div className='text-[14px] font-normal  w-[30%] leading-[16.8px] lg:w-[85%] mx-auto'>Proven track record of delivering quality solutions</div>
+            <div className='text-[14px] font-normal  lg:w-[30%] leading-[16.8px] lg:w-[85%] mx-auto'>Proven track record of delivering quality solutions</div>
         </div>
         <div className='text-center'>
             <img src={bulb} className='mx-auto'/>
             <div className='text-[16px] font-[600] leading-[28px]'>IT Consulting</div>
-            <div className='text-[14px] font-normal w-[30%] leading-[16.8px] lg:w-[80%] mx-auto'>Expert guidance for your technology infrastructure</div>
+            <div className='text-[14px] font-normal lg:w-[30%] leading-[16.8px] lg:w-[80%] mx-auto'>Expert guidance for your technology infrastructure</div>
         </div>
     </div>
     </div>
