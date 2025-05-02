@@ -25,11 +25,16 @@ function Clients() {
         <div className='text-[30px] font-bold leading-[36px]'>Our Trusted Clients</div>
         <Swiper
   modules={[Autoplay]}
-  spaceBetween={50} // Increase gap between images
-  slidesPerView={5}
   loop={true}
   autoplay={{ delay: 2000, disableOnInteraction: false }}
-  className="w-[90%] mx-auto mt-[5%] flex items-center"
+  spaceBetween={50}
+  slidesPerView={1}
+  breakpoints={{
+    640: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 5 },
+  }}
+  className="w-[90%] mx-auto mt-[5%]"
 >
   {[
     fairfield, qentelli, westlin, sunquest, perusal, amps,
@@ -37,13 +42,15 @@ function Clients() {
   ].map((img, idx) => (
     <SwiperSlide
       key={idx}
-      className="flex items-center justify-center h-[120px]" // Center vertically inside slide
+      className="flex justify-center items-center h-[120px]"
     >
-      <img
-        src={img}
-        alt={`partner-${idx}`}
-        className="h-[80px] object-contain" // Uniform height, adjust as needed
-      />
+      <div className="w-auto h-[80px] flex items-center justify-center">
+        <img
+          src={img}
+          alt={`partner-${idx}`}
+          className="max-h-full max-w-full object-contain"
+        />
+      </div>
     </SwiperSlide>
   ))}
 </Swiper>
