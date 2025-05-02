@@ -25,8 +25,8 @@ function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick 
   return (
     <div>
       <div className="bg-[#111827] flex gap-x-8 justify-end text-white p-4 px-8">
-        <div className="hidden lg:flex gap-x-2 text-base items-center"><FaPhone /> +1 (555) 123-4567</div>
-        <div className="flex gap-x-2 text-base items-center"><IoMdMail /> contact@dsenterprise.com</div>
+        <div className="hidden lg:flex gap-x-2 text-base items-center"><FaPhone /> +91 9742377772</div>
+        <div className="flex gap-x-2 text-base items-center"><IoMdMail /> sales@asenterprisesindia.co.in</div>
       </div>
 
       <div className="flex justify-between p-4 px-8 items-center relative">

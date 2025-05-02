@@ -15,19 +15,37 @@ function Services() {
     <div className='text-center mt-[35px]'>
         <div className='text-[20px] leading-[20px] font-[600] sm:text-[20px] sm:leading-[22px] mb-[20px] md:text-[25px] md:leading-[24px] lg:text-[30px] lg:leading-[26px]'>Our Services</div>
         <div className='sm:text-[14px] md:text-[16px]  lg:text-[16px] font-[600]'>Explore our range of IT solutions tailored to meet your business and personal tech needs.</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-[90%] ml-[30px] lg:w-[70%] lg:mx-auto gap-y-12 mt-4 pb-[80px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-[90%] ml-[30px] lg:w-[70%] lg:mx-auto gap-y-12 mt-4 pb-[80px]">
       {data.map((item, index) => {
         const matchedImg = Object.entries(images).find(([path]) =>
           path.includes(item.img)
         )?.[1]?.default;
 
         return (
-          <div key={index} className="bg-white rounded-[8px] shadow border border-gray-200  w-[95%] text-left pb-4">
-            <img src={matchedImg} alt={item.heading} className="w-[100%] h-auto object-contain" />
-            <h2 className="text-lg font-semibold bg-[#312E81] text-[white] p-2 flex justify-between items-center cursor-pointer h-[48px]" onClick={()=>navigate(`/services/${item.heading}`)}>{item.heading}<IoIosArrowForward className='w-[34px] h-[62px]'/></h2>
-            <p className="text-[16px] text-[#4B5563] font-[400] mt-4 w-[85%] ml-6 leading-[24px]">{item.description}</p>
-            {/* <button className='bg-[#312E81] text-[16px] font-[500] leading-[24px] text-white w-[100%] h-[40px] rounded-[4px] mt-[20px] px-[24px] py-[8px] cursor-pointer' >Get Quote</button> */}
-          </div>
+          <div
+  key={index}
+  className="min-w-[320px] max-w-[340px] bg-white rounded-xl shadow-md border border-gray-200 flex-shrink-0 overflow-hidden relative"
+>
+  <div className="relative">
+    <img
+      src={matchedImg}
+      alt={item.heading}
+      className="w-full h-[230px] object-cover"
+    />
+    <div
+      className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white px-4 py-2 flex justify-between items-center cursor-pointer"
+      onClick={() => navigate(`/services/${item.heading}`)}
+    >
+      <h2 className="text-[20px] font-semibold">{item.heading}</h2>
+      <IoIosArrowForward className="w-5 h-5" />
+    </div>
+  </div>
+
+  <p className="text-[16px] text-[#4B5563] font-[400] mt-4 w-[85%] ml-6 mb-4 leading-[24px] text-left">
+  {item.description}
+</p>
+</div>
+
         );
       })}
     </div>

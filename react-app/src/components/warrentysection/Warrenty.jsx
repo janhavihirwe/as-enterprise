@@ -2,7 +2,7 @@ import React from 'react'
 import { MdOutlineSecurity } from "react-icons/md";
 import { MdOutlineDone } from "react-icons/md";
 
-function Warrenty() {
+function Warrenty({onContactClick}) {
   return (
     <div className='mx-auto  mt-[30px] pt-[50px] bg-[#F9FAFB] pb-[50px]'>
         <div className='text-[30px] font-bold leading-[38px] mx-auto text-center'>Warranty Plans</div>
@@ -15,7 +15,7 @@ function Warrenty() {
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>Phone support</div>
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>Email support</div>
                 </div>
-                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[85px] gap-x-2 cursor-pointer'><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
+                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[85px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
             <div className=' relative border-2 border-[#2563EB] rounded-[8px] w-[100%] h-[100%] p-[30px] bg-[#EFF6FF]'>
             <div className='absolute top-[-0px] right-[-2px] bg-[#2563EB] text-white text-[14px] font-semibold px-3 py-1 rounded-tr-lg rounded-bl-lg shadow w-[80px] h-[28px] text-center'>Popular</div>
@@ -27,7 +27,7 @@ function Warrenty() {
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>Priority support</div>
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>24/7 assistance</div>
                 </div>
-                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[50px] gap-x-2 cursor-pointer'><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
+                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[50px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
             <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] h-[100%] p-[30px]'>
                 <div className='text-[24px] font-[600] leading-[32px] flex items-center gap-x-2'><MdOutlineSecurity className='text-[#6B7280]'/>Premium</div>
@@ -39,7 +39,7 @@ function Warrenty() {
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>On-site support</div>
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>Data recovery</div>
                 </div>
-                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[20px] gap-x-2 cursor-pointer'><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
+                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[20px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
         </div>
     </div>

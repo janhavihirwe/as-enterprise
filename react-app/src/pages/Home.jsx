@@ -26,11 +26,14 @@ function Home() {
       <FirstSection />
       <div ref={servicesRef}><Services /></div>
       <div ref={clientsRef}><Clients /></div>
-      <Warrenty />
+      <Warrenty onContactClick={() => contactRef.current?.scrollIntoView({ behavior: 'smooth' })}/>
       <div ref={aboutRef}><Aboutus /></div>
-      <Feedback />
       <div ref={contactRef}><ContactUs /></div>
-      <Footer />
+      <Footer 
+      onAboutClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}
+      onServicesClick={() => servicesRef.current?.scrollIntoView({ behavior: 'smooth' })}
+      onClientsClick={() => clientsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+      onContactClick={() => contactRef.current?.scrollIntoView({ behavior: 'smooth' })}/>
     </div>
   )
 }
