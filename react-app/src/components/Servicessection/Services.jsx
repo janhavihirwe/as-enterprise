@@ -14,7 +14,7 @@ function Services() {
     <div>
     <div className='text-center mt-[35px]'>
         <div className='text-[20px] leading-[20px] font-[600] sm:text-[20px] sm:leading-[22px] mb-[20px] md:text-[25px] md:leading-[24px] lg:text-[30px] lg:leading-[26px]'>Our Services</div>
-        <div className='sm:text-[14px] md:text-[16px]  lg:text-[16px] font-[600] mx:auto'>Explore our range of IT solutions tailored to meet your business and personal tech needs.</div>
+        <div className='sm:text-[14px] md:text-[16px]  lg:text-[16px] font-[600] m-4'>Explore our range of IT solutions tailored to meet your business and personal tech needs.</div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-[90%] ml-[20px] lg:w-[70%] lg:mx-auto gap-y-12 mt-4 pb-[80px]">
       {data.map((item, index) => {
         const matchedImg = Object.entries(images).find(([path]) =>
@@ -24,7 +24,7 @@ function Services() {
         return (
           <div
   key={index}
-  className="min-w-[320px] max-w-[340px] bg-white rounded-xl shadow-md border border-gray-200 flex-shrink-0 overflow-hidden relative mx:auto"
+  className="min-w-[320px] max-w-[340px] bg-white rounded-xl shadow-md border border-gray-200 flex-shrink-0 overflow-hidden relative "
 >
   <div className="relative">
     <img
