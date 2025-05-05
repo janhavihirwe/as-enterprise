@@ -8,8 +8,10 @@ import star from "../../assets/star1.png"
 import electricity from "../../assets/electricity.png"
 import support from "../../assets/support.png"
 import Warrenty from '../warrentysection/Warrenty'
+import { useNavigate } from 'react-router-dom'
 
 function Warranty() {
+    const navigate=useNavigate()
   return (
     <div>
             <div style={{
@@ -42,7 +44,7 @@ function Warranty() {
       <div className='text-[#E5E7EB] text-[20px] font-[400] leading-[28px] lg:w-[40%] mx-auto mt-[20px]'>
           Safeguard your devices with flexible Lenovo warranty and accidental damage protection
       </div>
-      <button className='text-[#FFFFFF] text-[16px] font-[500] leading-[24px] bg-[#312E81] w-[176px] h-[52px] mt-[30px]'>
+      <button className='text-[#FFFFFF] text-[16px] font-[500] leading-[24px] bg-[#312E81] w-[176px] h-[52px] mt-[30px]' onClick={() => navigate('/?scrollToContact=true')}>
           Get Quote
       </button>
   </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import bg from "../../assets/bgitconsulting.png"
 import security from "../../assets/security.png"
 import setting from "../../assets/setting.png"
@@ -7,8 +7,10 @@ import malware from "../../assets/malware.png"
 import star from "../../assets/star1.png"
 import electricity from "../../assets/electricity.png"
 import support from "../../assets/support.png"
+import { useNavigate } from 'react-router-dom'
 
 function ItConsulting() {
+    const navigate = useNavigate();
   return (
     <div>
             <div style={{
@@ -33,7 +35,7 @@ function ItConsulting() {
             <div style={{ position: 'relative', zIndex: 1,paddingTop:"80px"}}>
                 <div className='text-[#FFFFFF] text-[25px] lg:text-[40px] font-[700] leading-[48px]'>IT Consulting Services</div>
                 <div className='text-[#E5E7EB] text-[20px] font-[400] leading-[28px] lg:w-[40%] mx-auto mt-[20px]'>Strategic guidance to scale your business with technology</div>
-                <button className='text-[#FFFFFF] text-[16px] font-[500] leading-[24px] bg-[#312E81] w-[176px] h-[52px] mt-[30px]'>Get Quote</button>
+                <button className='text-[#FFFFFF] text-[16px] font-[500] leading-[24px] bg-[#312E81] w-[176px] h-[52px] mt-[30px]'  onClick={() => navigate('/?scrollToContact=true')}>Get Quote</button>
             </div>
             </div>
             <div className='flex flex-col lg:flex-row gap-x-6 w-[95%] mx-auto mt-[80px] items-center gap-y-6'>
