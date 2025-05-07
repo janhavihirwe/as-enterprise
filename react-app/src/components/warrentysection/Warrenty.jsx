@@ -6,7 +6,7 @@ function Warrenty({onContactClick}) {
   return (
     <div className='mx-auto  mt-[30px] pt-[50px] bg-[#F9FAFB] pb-[50px]'>
         <div className='text-[30px] font-bold leading-[38px] mx-auto text-center'>Warranty Plans</div>
-        <div className='flex  flex-col gap-y-6 lg:flex-row w-[70%] mx-auto gap-x-6 mt-[30px]'>
+        <div className='flex  flex-col gap-y-6 lg:flex-row lg:w-[70%] mx-auto gap-x-6 mt-[30px] w-[85%]'>
             <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] h-[570px] p-[30px]'>
                 <div className='text-[22px] font-[600] leading-[32px] flex items-center gap-x-2'><MdOutlineSecurity className='text-[#6B7280]'/>Onsite Support</div>
                 <div className='text-[16px] font-normal leading-[24px] text-[#4B5563] mt-4'>Economic-Best Seller</div>
