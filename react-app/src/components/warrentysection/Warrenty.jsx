@@ -29,7 +29,7 @@ function Warrenty({onContactClick}) {
                 </div>
                 <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center lg:mt-[170px] mt-[150px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
-            <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] lg:h-[570px] h-[600px] p-[30px]'>
+            <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] lg:h-[570px] h-[620px] p-[30px]'>
                 <div className='text-[24px] font-[600] leading-[32px] flex items-center gap-x-2'><MdOutlineSecurity className='text-[#6B7280]'/>Premium/Premier Plus</div>
                 <div className='text-[16px] font-normal leading-[24px] text-[#4B5563] mt-2'>Optimum-Extra Care</div>
                 <div className='mt-[20px]'>
