@@ -15,7 +15,7 @@ function Warrenty({onContactClick}) {
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/>Basic Phone support for hardware Issues</div>
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/><div><b>Faster</b> repairs done at your location</div></div>
                 </div>
-                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[255px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
+                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center lg:mt-[255px] mt-[230px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
             <div className=' relative border-2 border-[#2563EB] rounded-[8px] w-[100%] h-[570px] p-[30px] bg-[#EFF6FF]'>
             <div className='absolute top-[-0px] right-[-2px] bg-[#2563EB] text-white text-[14px] font-semibold px-3 py-1 rounded-tr-lg rounded-bl-lg shadow w-[80px] h-[28px] text-center'>Popular</div>
@@ -27,9 +27,9 @@ function Warrenty({onContactClick}) {
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/><div><b>Fastest</b> repairs done at your location, Next Business Day</div></div>
                     <div className='flex items-center gap-x-2 mb-[8px]'><MdOutlineDone className='text-[green]'/><b>Comprehensive Hardware & Sotware Support</b></div>
                 </div>
-                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center mt-[170px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
+                <button className='bg-[#312E81] rounded-[4px] text-[#FFFFFF] w-[100%] h-[40px] flex items-center justify-center lg:mt-[170px] mt-[150px] gap-x-2 cursor-pointer' onClick={()=>onContactClick()}><MdOutlineSecurity className='text-[#FFFFFF] '/>Get Quote</button>
             </div>
-            <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] h-[570px] p-[30px]'>
+            <div className='border border-[#E5E7EB] rounded-[8px] w-[100%] lg:h-[570px] h-[600px] p-[30px]'>
                 <div className='text-[24px] font-[600] leading-[32px] flex items-center gap-x-2'><MdOutlineSecurity className='text-[#6B7280]'/>Premium/Premier Plus</div>
                 <div className='text-[16px] font-normal leading-[24px] text-[#4B5563] mt-2'>Optimum-Extra Care</div>
                 <div className='mt-[20px]'>
