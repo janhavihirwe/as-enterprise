@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/A S Entriprise.png"
 import { MdMenu } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 
@@ -29,8 +29,8 @@ function Navbar({ onAboutClick, onServicesClick, onClientsClick, onContactClick 
         <div className="flex gap-x-2 text-base items-center"><IoMdMail /> sales@asenterprisesindia.co.in</div>
       </div>
 
-      <div className="flex justify-between p-4 px-8 items-center relative">
-        <img src={logo} className="cursor-pointer" onClick={()=>navigate("/")}/>
+      <div className="flex justify-between p-2 px-8 items-center relative">
+        <img src={logo} className="cursor-pointer h-[90px]" onClick={()=>navigate("/")}/>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-x-8 text-base items-center">
