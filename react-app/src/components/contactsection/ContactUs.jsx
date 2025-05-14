@@ -1,32 +1,59 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_jycg139',     // Replace with your EmailJS service ID
+      'template_n3ojssd',    // Replace with your EmailJS template ID
+      form.current,
+      'VAb4Uq6TAWOJ_kzwH'      // Replace with your EmailJS public key
+    ).then(
+        () => {
+          toast.success("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Failed to send the message. Please try again.");
+          console.error(error.text);
+        }
+    );
+  };
   return (
     <div className='bg-[#F9FAFB] pt-[50px] mt-[50px] pb-[50px]'>
+         <ToastContainer position="top-center" autoClose={3000} />
         <div className='text-[30px] font-bold text-center'>Contact Us</div>
         <div className='flex flex-col lg:flex-row w-[80%] gap-y-4 lg:w-[80%] mx-auto gap-x-14 mt-[15px]'>
-            <div className='w-[100%]'>
-                <div>
-                    <div>Name</div>
-                    <input type='text' className='border border-[ #D1D5DB] rounded-[6px] w-[100%] h-[42px] mb-[15px]'/>
-                </div>
-                <div>
-                    <div>Email</div>
-                    <input type='email' className='border border-[ #D1D5DB] rounded-[6px] w-[100%] h-[42px] mb-[15px]'/>
-                </div>
-                <div>
-                    <div>Phone</div>
-                    <input type='phone' className='border border-[ #D1D5DB] rounded-[6px] w-[100%] h-[42px] mb-[15px]'/>
-                </div>
-                <div>
-                    <div>Message</div>
-                    <textarea className='border border-[ #D1D5DB] rounded-[6px] w-[100%] h-[114px] mb-[15px]'/>
-                </div>
-                <button className='text-white text-[16px] font-[500] rounded-[4px] bg-black w-[100%] h-[40px] cursor-pointer'>Send Message</button>
-            </div>
+        <form ref={form} onSubmit={sendEmail} className='w-[100%]'>
+          <div>
+            <div>Name</div>
+            <input type='text' name='name' required className='border border-gray-300 rounded-[6px] w-full h-[42px] mb-[15px] px-2' />
+          </div>
+          <div>
+            <div>Email</div>
+            <input type='email' name='email' required className='border border-gray-300 rounded-[6px] w-full h-[42px] mb-[15px] px-2' />
+          </div>
+          <div>
+            <div>Phone</div>
+            <input type='text' name='phone' className='border border-gray-300 rounded-[6px] w-full h-[42px] mb-[15px] px-2' />
+          </div>
+          <div>
+            <div>Message</div>
+            <textarea name='message' required className='border border-gray-300 rounded-[6px] w-full h-[114px] mb-[15px] px-2 pt-2' />
+          </div>
+          <button type='submit' className='text-white text-[16px] font-[500] rounded-[4px] bg-black w-full h-[40px] cursor-pointer'>
+            Send Message
+          </button>
+        </form>
             <div className='w-[100%] flex flex-col gap-y-[20px]'>
                 <div className='text-[20px] font-[600] mt-[20px]'>Get in Touch</div>
                 <div className='text-[16px] font-[400] flex gap-x-2 items-center'><FaLocationDot/>#193, Channsandra Village, Uttarahalli Hobli,Kengeri Main Road Bangalore Karnataka-560061 GST -27AAQFD4355D1ZD</div>
