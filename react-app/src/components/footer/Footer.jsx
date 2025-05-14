@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../../assets/logo.png"
+import logo from "../../assets/A S Entriprise.png"
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
@@ -15,7 +15,7 @@ function Footer({onAboutClick, onServicesClick, onContactClick}) {
     <div className='bg-[#111827]'>
         <div className='flex flex-col lg:flex-row gap-y-8 gap-x-32 pt-[60px] pb-[60px] mx-auto w-[80%]'>
             <div className='w-[80%] lg:w-[20%]'>
-                <img src={logo}/>
+                <img src={logo} className='h-[100px]'/>
                 <div className='text-[16px] font-normal leading-[24px] text-[#9CA3AF] mt-[30px] '>Your trusted partner for comprehensive IT solutions and services.</div>
                 <div className='text-[16px] font-normal leading-[24px] text-[#9CA3AF] mt-[10px] w-[75%]'>Copyright © 2025 AS Enterprise. All rights reserved.<br/>Developed by <a href="https://www.thewebsort.com/" target="_blank" rel="noopener noreferrer" className='underline cursor-pointer' >Websort.</a><a onClick={()=>navigate("/privacy")} className='underline cursor-pointer'> Privacy policy</a></div>
             </div>
